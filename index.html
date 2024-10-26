@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Just+Another+Hand&display=swap" rel="stylesheet">
+  <style>
+	 :root {
+		--yellow: hsl(47, 88%, 63%);
+		--white: hsl(0, 0%, 100%);
+		--grey: hsl(0, 0%, 50%);
+		--black: hsl(0, 0%, 7%);
+		
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+    box-sizing: border-box; /* include padding in width and height */
+	}
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+	html {
+	  font-family: "Figtree", sans-serif;
+	  font-optical-sizing: auto;
+	  font-weight: 500;
+	  font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+	}
+	
+	body {
+    background-color: var(--yellow);
+	  height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+  
+  main {
+    width: calc(100% - 48px);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 384px;
+    background-color: var(--white);
+    filter: drop-shadow(8px 8px var(--black));
+  }
+  
+  main .card-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 24px;  
+  }
+  
+  main .tags {
+    margin-bottom: 12px;
+  }
+  
+  main .tag {
+    font-weight: 800;
+    font-size: 0.75rem;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding: 4px 12px;
+  }
+  
+  main .published {
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+  }
+  
+  main .title {
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+  
+  main .title a:hover {
+    color: var(--yellow);
+  }
+  
+  main .blurb {
+    margin-bottom: 24px;
+    font-size: 0.875rem;
+    color: var(--grey);
+  }
+  
+  main .author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  
+  main .author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Round author picture */
+  }
+  
+  @media (min-width: 768px) {
+    main .tag, main .published {
+      font-size: 0.875rem;
+    }
+    
+    main .title {
+      font-size: 1.5rem;
+    }
+    
+    main .blurb {
+      font-size: 1rem;
+    }
+  }
+	
+  </style>
+</head>
+<body>
+  <main>
+    <image class="card-img" src="assets/images/illustration-article.svg" alt="Blog logo">
+    <div class="tags"><span class="tag">Learning</span></div>
+    <div class="published">Published 21 Dec 2023</div>
+    <div class="title"><a href="#">HTML & CSS foundations</a></div>
+    <p class="blurb">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="author">
+      <img src="assets/images/image-avatar.webp" alt="Greg Hooper's Picture">
+      <span>Greg Hooper</span>
+    </div>
+  </main>
+</body>
+</html>
