@@ -1,0 +1,115 @@
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	--white: hsl(0, 0%, 100%);
+	--grey: hsl(0, 0%, 50%);
+	--black: hsl(0, 0%, 7%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Include padding in width and height */
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+html {
+	font-family: "Figtree", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	height: 100%;
+}
+
+body {
+	background-color: var(--yellow);
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: calc(100% - 3rem);
+	border: 1px solid var(--black);
+	border-radius: 1.25rem;
+	padding: 1.5rem;
+	max-width: 24rem;
+	background-color: var(--white);
+}
+
+main .card-img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.625rem;
+	margin-bottom: 1.5rem;
+}
+
+main .tags,
+main .published,
+main .blurb {
+	margin-bottom: 0.75rem;
+}
+
+main .tag {
+	font-weight: 800;
+	font-size: 0.75rem;
+	background-color: var(--yellow);
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.75rem;
+}
+
+main .published {
+	font-size: 0.75rem;
+}
+
+main h2.title {
+	margin-bottom: 0.75rem;
+	font-weight: 800;
+	font-size: 1.25rem;
+}
+
+main h2.title a:hover {
+	color: var(--yellow);
+}
+
+main .blurb {
+	margin-bottom: 1.5rem;
+	font-size: 0.875rem;
+	color: var(--grey);
+}
+
+main .author {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	font-size: 0.75rem;
+	font-weight: 800;
+}
+
+main .author img {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+	main .tag,
+	main .published {
+		font-size: 0.875rem;
+	}
+
+	main h2.title {
+		font-size: 1.5rem;
+	}
+
+	main .blurb {
+		font-size: 1rem;
+	}
+}
