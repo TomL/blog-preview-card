@@ -42,6 +42,7 @@ main {
 	padding: 1.5rem;
 	max-width: 24rem;
 	background-color: var(--white);
+	filter: drop-shadow(8px 8px var(--black));
 }
 
 main .card-img {
