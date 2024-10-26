@@ -22,9 +22,9 @@ Just a simple challenge to get used to using CSS again after a break.
 ![](./screenshot-desktop.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+0
+- Solution URL: [https://www.frontendmentor.io/solutions/blog-preview-card-hiSAJoxA3v](https://www.frontendmentor.io/solutions/blog-preview-card-hiSAJoxA3v)
+- Live Site URL: [https://blog-preview-card-sable-pi.vercel.app/](https://blog-preview-card-sable-pi.vercel.app/)
 
 ## Author
 
